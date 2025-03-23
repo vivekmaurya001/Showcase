@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Signal and Fourier Transform Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #charts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .chart {
+        flex: 1 1 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Signal and Fourier Transform Visualization</h1>
+    <div id="charts">
+      <div id="timeDomain" class="chart"></div>
+      <div id="frequencyDomain" class="chart"></div>
+    </div>
+    <!-- Vite will resolve the path to our module below -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
